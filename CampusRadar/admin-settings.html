@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform settings | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Administrator workspace</div>
+        <nav>
+            <a href="admin-overview.html">Overview</a>
+            <a href="admin-moderation.html">Event moderation</a>
+            <a href="admin-accounts.html">Accounts</a>
+            <a href="admin-organizations.html">Organizations</a>
+            <a href="admin-reports.html">Reports</a>
+            <a href="admin-settings.html" class="active">Platform settings</a>
+            <a href="admin-audit.html">Audit log</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Platform administrator</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Platform settings</h1>
+                <p>Global settings, notification behavior and publishing policy.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <form class="panel" action="admin-settings.html" method="get">
+            <fieldset>
+                <legend>Platform configuration</legend>
+                <p class="sub small">Global rules for access, publishing and communication</p>
+                <div>
+                <div class="setting">
+                    <div class="text">
+                        <label for="registration">Allow new user registration</label>
+                        <span>Users can create student accounts</span>
+                    </div>
+                    <input type="checkbox" id="registration" name="registration" checked>
+                </div>
+                <div class="setting">
+                    <div class="text">
+                        <label for="verification">Require organizer verification</label>
+                        <span>Unverified organizers cannot publish events</span>
+                    </div>
+                    <input type="checkbox" id="verification" name="verification" checked>
+                </div>
+                <div class="setting">
+                    <div class="text">
+                        <label for="expire">Automatically expire past events</label>
+                        <span>Hide events after the end date</span>
+                    </div>
+                    <input type="checkbox" id="expire" name="expire" checked>
+                </div>
+                <div class="setting">
+                    <div class="text">
+                        <label for="reminders">Email deadline reminders</label>
+                        <span>Send scheduled reminders to opted-in users</span>
+                    </div>
+                    <input type="checkbox" id="reminders" name="reminders" checked>
+                </div>
+                <div class="setting">
+                    <div class="text">
+                        <label for="review">Require admin review</label>
+                        <span>Newly submitted events need approval</span>
+                    </div>
+                    <input type="checkbox" id="review" name="review" checked>
+                </div>
+                <div class="setting">
+                    <div class="text">
+                        <label for="online">Allow online event listings</label>
+                        <span>Enable online and hybrid events</span>
+                    </div>
+                    <input type="checkbox" id="online" name="online" checked>
+                </div>
+                </div>
+            </fieldset>
+            <div class="right mt"><button type="submit" class="btn">Save settings</button></div>
+        </form>
+    </main>
+</div>
+
+</body>
+</html>

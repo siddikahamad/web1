@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform overview | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Administrator workspace</div>
+        <nav>
+            <a href="admin-overview.html" class="active">Overview</a>
+            <a href="admin-moderation.html">Event moderation</a>
+            <a href="admin-accounts.html">Accounts</a>
+            <a href="admin-organizations.html">Organizations</a>
+            <a href="admin-reports.html">Reports</a>
+            <a href="admin-settings.html">Platform settings</a>
+            <a href="admin-audit.html">Audit log</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Platform administrator</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Platform overview</h1>
+                <p>Manage the CampusRadar ecosystem with transparency and control.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="stats">
+            <div class="stat">
+            <div class="dash "></div>
+            <div class="label">Total accounts</div>
+            <div class="number">18,420</div>
+            <div class="note">Students and organizers</div>
+        </div>
+            <div class="stat">
+            <div class="dash "></div>
+            <div class="label">Published events</div>
+            <div class="number">1,284</div>
+            <div class="note">Currently visible</div>
+        </div>
+            <div class="stat">
+            <div class="dash dash-yellow"></div>
+            <div class="label">Pending reviews</div>
+            <div class="number">27</div>
+            <div class="note">Requires moderation</div>
+        </div>
+            <div class="stat">
+            <div class="dash dash-red"></div>
+            <div class="label">Open reports</div>
+            <div class="number">08</div>
+            <div class="note">Needs investigation</div>
+        </div>
+        </section>
+
+        <section class="row">
+            <article class="panel col-wide">
+                <h3>Platform activity</h3>
+                <p class="sub">A live operational snapshot for the moderation team.</p>
+                <h4>New event submissions</h4>
+                <div class="bars mt">
+                    <div class="bar" style="height: 70px;"></div><div class="bar" style="height: 115px;"></div><div class="bar" style="height: 80px;"></div><div class="bar bar-dark" style="height: 175px;"></div><div class="bar" style="height: 100px;"></div><div class="bar" style="height: 120px;"></div><div class="bar" style="height: 60px;"></div>
+                </div>
+                <div class="bar-labels">
+                    <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                </div>
+                <p class="small">Submissions are up 12% compared with last week.</p>
+            </article>
+
+            <article class="panel col-narrow">
+                <h3>Needs attention</h3>
+                <div class="mt">
+                    <div class="attention"><span>Event reviews</span><span class="pill-num">27</span></div>
+                    <div class="attention"><span>Account reports</span><span class="pill-num">08</span></div>
+                    <div class="attention"><span>Org verification</span><span class="pill-num">11</span></div>
+                    <div class="attention"><span>Content flags</span><span class="pill-num">04</span></div>
+                </div>
+                <a class="link-box" href="admin-moderation.html">Review queue &rarr;</a>
+            </article>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

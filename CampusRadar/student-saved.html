@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved events | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Student workspace</div>
+        <nav>
+            <a href="student-overview.html">Overview</a>
+            <a href="student-browse.html">Browse events</a>
+            <a href="student-saved.html" class="active">Saved events</a>
+            <a href="student-registrations.html">My registrations</a>
+            <a href="student-profile.html">Profile &amp; settings</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Student account</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Saved events</h1>
+                <p>Your bookmarked opportunities, all in one place.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="head-line">
+            <p class="bold small">08 events saved</p>
+            <div class="right"><select id="sort" name="sort"><option>Sort: Upcoming first</option><option>Sort: Newest saved</option></select></div>
+        </div>
+
+        <section class="row mt">
+            <article class="saved-card">
+                <div class="saved-top">
+                    <div class="thumb bg-blue"></div>
+                    <div class="info">
+                        <strong>National Hackathon 2027</strong>
+                        <span class="small">Tech Society &middot; 18&ndash;19 Feb &middot; Dhaka</span>
+                        <span class="badge green">Registration open</span>
+                    </div>
+                </div>
+                <div class="saved-foot">
+                    <a href="#">View event &rarr;</a>
+                    <span></span>
+                    <button type="button" class="btn btn-outline">Remove saved event</button>
+                </div>
+            </article>
+            <article class="saved-card">
+                <div class="saved-top">
+                    <div class="thumb bg-purple"></div>
+                    <div class="info">
+                        <strong>Research &amp; Innovation Summit</strong>
+                        <span class="small">Research Forum &middot; 24 Feb &middot; Online</span>
+                        <span class="badge yellow">Closes in 3 days</span>
+                    </div>
+                </div>
+                <div class="saved-foot">
+                    <a href="#">View event &rarr;</a>
+                    <span></span>
+                    <button type="button" class="btn btn-outline">Remove saved event</button>
+                </div>
+            </article>
+        </section>
+        <section class="row mt">
+            <article class="saved-card">
+                <div class="saved-top">
+                    <div class="thumb bg-orange"></div>
+                    <div class="info">
+                        <strong>Inter-University Robotics Fest</strong>
+                        <span class="small">Engineering Club &middot; 3 Mar &middot; Chattogram</span>
+                        <span class="badge green">Registration open</span>
+                    </div>
+                </div>
+                <div class="saved-foot">
+                    <a href="#">View event &rarr;</a>
+                    <span></span>
+                    <button type="button" class="btn btn-outline">Remove saved event</button>
+                </div>
+            </article>
+            <article class="saved-card">
+                <div class="saved-top">
+                    <div class="thumb bg-pink"></div>
+                    <div class="info">
+                        <strong>Campus Culture Week</strong>
+                        <span class="small">Cultural Society &middot; 10&ndash;12 Mar &middot; Rajshahi</span>
+                        <span class="badge green">Registration open</span>
+                    </div>
+                </div>
+                <div class="saved-foot">
+                    <a href="#">View event &rarr;</a>
+                    <span></span>
+                    <button type="button" class="btn btn-outline">Remove saved event</button>
+                </div>
+            </article>
+        </section>
+        <section class="row mt">
+            <article class="saved-card">
+                <div class="saved-top">
+                    <div class="thumb bg-lime"></div>
+                    <div class="info">
+                        <strong>Design for Impact</strong>
+                        <span class="small">Creative Society &middot; 15 Mar &middot; Online</span>
+                        <span class="badge green">Registration open</span>
+                    </div>
+                </div>
+                <div class="saved-foot">
+                    <a href="#">View event &rarr;</a>
+                    <span></span>
+                    <button type="button" class="btn btn-outline">Remove saved event</button>
+                </div>
+            </article>
+            <article class="saved-card">
+                <div class="saved-top">
+                    <div class="thumb bg-blue"></div>
+                    <div class="info">
+                        <strong>Astronomy Night</strong>
+                        <span class="small">AASSC &middot; AIUB &middot; 22 Mar &middot; Dhaka</span>
+                        <span class="badge green">Registration open</span>
+                    </div>
+                </div>
+                <div class="saved-foot">
+                    <a href="#">View event &rarr;</a>
+                    <span></span>
+                    <button type="button" class="btn btn-outline">Remove saved event</button>
+                </div>
+            </article>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

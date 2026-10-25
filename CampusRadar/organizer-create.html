@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new event | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="app">
+            <aside class="sidebar">
+                <div class="logo">
+            <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+            <div>
+                <span class="logo-name">CampusRadar</span>
+                <span class="logo-bd">BD</span>
+            </div>
+        </div>
+
+        <div class="side-title">Organizer workspace</div>
+        <nav>
+            <a href="organizer-overview.html">Overview</a>
+            <a href="organizer-events.html">My events</a>
+            <a href="organizer-create.html" class="active">Create event</a>
+            <a href="organizer-registrations.html">Registrations</a>
+            <a href="organizer-settings.html">Organization settings</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Organizer account</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Create a new event</h1>
+                <p>Build a complete listing in a guided six-step flow.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="tabs">
+            <a class="on" href="organizer-create.html">1 Basics</a>
+            <a href="#">2 Date &amp; venue</a>
+            <a href="#">3 Segments</a>
+            <a href="#">4 Media</a>
+            <a href="#">5 Registration</a>
+            <a href="#">6 Review</a>
+        </nav>
+
+        <section class="row">
+            <form class="panel col-wide" action="organizer-events.html" method="get">
+                <fieldset>
+                    <legend>Event basics</legend>
+                    <p class="sub small">A strong title and clear eligibility help the right students find your listing.</p>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="title">Event title</label>
+                            <input type="text" id="title" name="title" placeholder="Official event name" required>
+                        </div>
+                        <div class="col">
+                            <label for="summary">Short summary</label>
+                            <input type="text" id="summary" name="summary" placeholder="What is the event about?">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="host">Host organization</label>
+                            <select id="host" name="host">
+                                <option>Select verified organization</option>
+                                <option>AIUB Astronomy &amp; Space Science Club</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="category">Category</label>
+                            <select id="category" name="category">
+                                <option>Choose event category</option>
+                                <option>Hackathon</option>
+                                <option>Research</option>
+                                <option>Robotics</option>
+                                <option>Culture</option>
+                                <option>Design</option>
+                                <option>Science</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="audience">Audience / eligibility</label>
+                    <input type="text" id="audience" name="audience" placeholder="e.g. University students nationwide">
+
+                    <label for="description">Event description</label>
+                    <textarea id="description" name="description" rows="4" cols="30" placeholder="Goals, format, activities and participant outcomes"></textarea>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="contact">Contact email</label>
+                            <input type="email" id="contact" name="contact" placeholder="organizer@example.edu">
+                        </div>
+                        <div class="col">
+                            <label for="deadline">Registration deadline</label>
+                            <input type="date" id="deadline" name="deadline">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="row mt">
+                    <button type="submit" class="btn btn-outline">Save draft</button>
+                    <span class="spacer"></span>
+                    <button type="submit" class="btn">Continue &rarr;</button>
+                </div>
+            </form>
+
+            <aside class="col">
+                <section class="panel">
+                    <h3>Publishing tips</h3>
+                    <ul>
+                        <li>Use the official event name</li>
+                        <li>Explain benefits and outcomes</li>
+                        <li>Set clear eligibility criteria</li>
+                        <li>Add rules to every segment</li>
+                    </ul>
+                </section>
+                <section class="tip">
+                    <h3>Before you publish</h3>
+                    <p>Your event is reviewed before it appears publicly. Keep venue, dates, fees and registration rules accurate.</p>
+                    <p class="mt"><span class="badge grey">Step 1 of 6</span></p>
+                </section>
+            </aside>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

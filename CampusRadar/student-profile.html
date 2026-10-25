@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your profile | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Student workspace</div>
+        <nav>
+            <a href="student-overview.html">Overview</a>
+            <a href="student-browse.html">Browse events</a>
+            <a href="student-saved.html">Saved events</a>
+            <a href="student-registrations.html">My registrations</a>
+            <a href="student-profile.html" class="active">Profile &amp; settings</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Student account</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Your profile</h1>
+                <p>Manage your identity, preferences and account details.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="panel">
+            <div class="head-line">
+                <div>
+                    <h3>Abid Hasan</h3>
+                    <p class="small">Computer Science &middot; University student</p>
+                </div>
+                <div class="right"><a class="btn btn-light" href="#">Edit profile</a></div>
+            </div>
+
+            <form action="student-profile.html" method="get">
+                <div class="row">
+                    <div class="col">
+                        <label for="fullname">Full name</label>
+                        <input type="text" id="fullname" name="fullname" value="Abid Hasan">
+                    </div>
+                    <div class="col">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" value="abid@example.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="university">University</label>
+                        <input type="text" id="university" name="university" value="American International University-Bangladesh">
+                    </div>
+                    <div class="col">
+                        <label for="department">Department</label>
+                        <input type="text" id="department" name="department" value="Computer Science &amp; Engineering">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="level">Academic level</label>
+                        <input type="text" id="level" name="level" value="Undergraduate">
+                    </div>
+                    <div class="col">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" value="Dhaka, Bangladesh">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="row">
+            <form class="panel col" action="student-profile.html" method="get">
+                <fieldset>
+                    <legend>Preferences &amp; notifications</legend>
+                    <p class="sub small">Choose the updates that matter to you</p>
+                    <div class="setting">
+                        <div class="text">
+                            <label for="deadline">Event deadline reminders</label>
+                            <span>Email me before a deadline</span>
+                        </div>
+                        <input type="checkbox" id="deadline" name="deadline" checked>
+                    </div>
+                    <div class="setting">
+                        <div class="text">
+                            <label for="recommended">Recommended events</label>
+                            <span>Suggestions based on my interests</span>
+                        </div>
+                        <input type="checkbox" id="recommended" name="recommended" checked>
+                    </div>
+                    <div class="setting">
+                        <div class="text">
+                            <label for="product">Product updates</label>
+                            <span>Occasional CampusRadar news</span>
+                        </div>
+                        <input type="checkbox" id="product" name="product">
+                    </div>
+                </fieldset>
+            </form>
+
+            <section class="panel col">
+                <h3>Security &amp; account</h3>
+                <div class="head-line mt">
+                    <div>
+                        <b>Password</b>
+                        <p class="small">Keep your account protected<br>Last updated recently</p>
+                    </div>
+                    <div class="right"><a class="btn btn-outline" href="reset-password.html">Change password</a></div>
+                </div>
+                <hr>
+                <h4 class="mt">Signed-in sessions</h4>
+                <p class="small">Review devices that have access to your account.</p>
+                <p class="mt small"><a class="red-link" href="login.html">Log out from all devices &rarr;</a></p>
+            </section>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrations | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Organizer workspace</div>
+        <nav>
+            <a href="organizer-overview.html">Overview</a>
+            <a href="organizer-events.html">My events</a>
+            <a href="organizer-create.html">Create event</a>
+            <a href="organizer-registrations.html" class="active">Registrations</a>
+            <a href="organizer-settings.html">Organization settings</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Organizer account</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Registrations</h1>
+                <p>Manage participants, teams and registration status.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <form action="organizer-registrations.html" method="get" class="filter-bar">
+            <select id="event" name="event"><option>National Innovation Fest</option><option>Astronomy Night</option><option>Campus Culture Week</option></select>
+            <input class="grow" type="text" id="q" name="q" placeholder="Search participant or team">
+            <button type="button" class="btn btn-outline">Export CSV</button>
+        </form>
+
+        <h3 class="mt">Participants</h3>
+        <div class="mt"></div>
+<div class="table-wrap">
+<table class="data-table">
+    <thead>
+        <tr><th>Registration</th><th>Name / Team</th><th>Segment</th><th>Status</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>CR-2027-001284</td><td>Team Nova</td><td>Project showcase</td><td><span class="badge green">Confirmed</span></td><td><a href="#">View</a></td></tr>
+        <tr class="shade"><td>CR-2027-001285</td><td>Sara Rahman</td><td>Research poster</td><td><span class="badge yellow">Submitted</span></td><td><a href="#">View</a></td></tr>
+        <tr><td>CR-2027-001286</td><td>Robotics Crew</td><td>Hackathon</td><td><span class="badge red">Needs review</span></td><td><a href="#">View</a></td></tr>
+        <tr class="shade"><td>CR-2027-001287</td><td>Nafis Ahmed</td><td>Project showcase</td><td><span class="badge green">Confirmed</span></td><td><a href="#">View</a></td></tr>
+    </tbody>
+</table>
+</div>
+
+        <section class="panel">
+            <div class="head-line">
+                <div>
+                    <h3>Registration tools</h3>
+                    <p class="sub small">Export participant data, review submissions and update registration status.</p>
+                </div>
+                <div class="right"><a class="btn btn-light" href="#">Download registrations</a></div>
+            </div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

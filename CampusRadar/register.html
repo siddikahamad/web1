@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-page">
+    <div class="auth">
+
+        <!-- Left dark panel -->
+        <aside class="auth-left">
+            <div class="logo logo-white">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+            <h1>Big opportunities<br>start with one<br>account.</h1>
+            <p>Find your community. Discover your next challenge.<br>Make your campus journey count.</p>
+            <div class="auth-bottom">MADE FOR STUDENTS ACROSS BANGLADESH</div>
+        </aside>
+
+        <!-- Right form panel -->
+        <main class="auth-right">
+            <a class="back-btn" href="index.html">&larr; Back</a>
+
+            <div class="auth-form">
+                <h1>Create your account</h1>
+                <p>One account for the opportunities that move you.</p>
+
+                <form action="login.html" method="get">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="type">Account type</label>
+                    <select id="type" name="type">
+                        <option value="">Student or Organizer</option>
+                        <option value="student">Student</option>
+                        <option value="organizer">Organizer</option>
+                    </select>
+
+                    <label for="school">School or university</label>
+                    <input type="text" id="school" name="school" placeholder="Search your school or university">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="At least 8 characters" required>
+
+                    <button type="submit" class="btn btn-full">Create account</button>
+                </form>
+
+                <p class="small mt">By continuing, you agree to our Terms and Privacy Policy.</p>
+                <div class="auth-links">
+                    Already have an account? <a href="login.html">Log in</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+</body>
+</html>

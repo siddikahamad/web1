@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization verification | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Administrator workspace</div>
+        <nav>
+            <a href="admin-overview.html">Overview</a>
+            <a href="admin-moderation.html">Event moderation</a>
+            <a href="admin-accounts.html">Accounts</a>
+            <a href="admin-organizations.html" class="active">Organizations</a>
+            <a href="admin-reports.html">Reports</a>
+            <a href="admin-settings.html">Platform settings</a>
+            <a href="admin-audit.html">Audit log</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Platform administrator</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Organization verification</h1>
+                <p>Verify legitimate organizers and maintain trust across the platform.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <form action="admin-organizations.html" method="get" class="filter-bar">
+            <input class="grow" type="text" id="q" name="q" placeholder="Search organization">
+            <select id="verification" name="verification"><option>Verification: All</option><option>Verified</option><option>Pending</option><option>Needs info</option></select>
+        </form>
+
+<div class="table-wrap">
+<table class="data-table">
+    <thead>
+        <tr><th>Organization</th><th>University</th><th>Status</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>AIUB Astronomy &amp; Space Science Club</td><td>AIUB</td><td><span class="badge green">Verified</span></td><td><a href="#">Review</a></td></tr>
+        <tr class="shade"><td>Tech Society</td><td>Example University</td><td><span class="badge yellow">Pending</span></td><td><a href="#">Review</a></td></tr>
+        <tr><td>Research Forum</td><td>National University</td><td><span class="badge yellow">Needs info</span></td><td><a href="#">Review</a></td></tr>
+        <tr class="shade"><td>Cultural Society</td><td>Example University</td><td><span class="badge green">Verified</span></td><td><a href="#">Review</a></td></tr>
+        <tr><td>Code Community BD</td><td>Independent</td><td><span class="badge yellow">Pending</span></td><td><a href="#">Review</a></td></tr>
+    </tbody>
+</table>
+</div>
+
+    </main>
+</div>
+
+</body>
+</html>

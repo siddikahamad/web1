@@ -1,0 +1,1460 @@
+/* =====================================================
+   CampusRadar BD - one CSS file for every page
+   Only simple things from class: selectors, box model,
+   position, display, flex, max-width, z-index, overflow
+   ===================================================== */
+
+/* ---------- Universal + base ---------- */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+body {
+    margin: 0;
+    background-color: #f8faf7;
+    color: #17302b;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    color: #5d7770;
+    line-height: 1.5;
+}
+
+a {
+    color: #1a6b58;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0f4a3c;
+}
+
+ul {
+    margin: 0;
+    padding-left: 18px;
+    line-height: 2;
+}
+
+/* ---------- Small helper classes ---------- */
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+.col {
+    flex: 1;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.muted {
+    color: #5d7770;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.red-link {
+    color: #c0392b;
+}
+
+.mt {
+    margin-top: 16px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a6b58;
+    text-transform: uppercase;
+}
+
+/* ---------- Logo ---------- */
+.logo {
+    display: flex;
+    gap: 12px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo-bd {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #1a6b58;
+}
+
+.logo-white .logo-name {
+    color: white;
+}
+
+.logo-white .logo-bd {
+    color: white;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a6b58;
+    color: white;
+    border: 1px solid #1a6b58;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0f4a3c;
+    color: white;
+}
+
+.btn-light {
+    background-color: #eaf6ef;
+    color: #1a6b58;
+    border: 1px solid #eaf6ef;
+}
+
+.btn-light:hover {
+    background-color: #d5eddc;
+    color: #1a6b58;
+}
+
+.btn-outline {
+    background-color: white;
+    color: #17302b;
+    border: 1px solid #d6e0db;
+}
+
+.btn-outline:hover {
+    background-color: #f1f5f2;
+    color: #17302b;
+}
+
+.btn-yellow {
+    background-color: #ffc94d;
+    border: 1px solid #ffc94d;
+    color: #17302b;
+}
+
+.btn-yellow:hover {
+    background-color: #f0b830;
+    color: #17302b;
+}
+
+.btn-full {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---------- Badges (status pills) ---------- */
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.green {
+    background-color: #dff3e6;
+    color: #1a6b58;
+}
+
+.yellow {
+    background-color: #ffc94d;
+    color: #17302b;
+}
+
+.red {
+    background-color: #fbdcd6;
+    color: #c0392b;
+}
+
+.grey {
+    background-color: #eef1ef;
+    color: #5d7770;
+}
+
+/* =====================================================
+   FORMS (login, register, tables, settings)
+   ===================================================== */
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d6e0db;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 13px;
+    color: #17302b;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border: 1px solid #1a6b58;
+}
+
+input[required] {
+    border: 1px solid #b9cfc6;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: inline-block;
+    width: auto;
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =====================================================
+   LOGIN / REGISTER / FORGOT / RESET  (auth pages)
+   ===================================================== */
+.auth-page {
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.auth {
+    display: flex;
+    max-width: 1100px;
+    min-height: 600px;
+    margin: 0 auto;
+    border: 1px solid #d6e0db;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.auth-left {
+    position: relative;
+    width: 33%;
+    padding: 30px;
+    background-color: #17403a;
+    color: white;
+}
+
+.auth-left h1 {
+    margin-top: 50px;
+    color: white;
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.auth-left p {
+    margin-top: 30px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.auth-bottom {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.auth-right {
+    position: relative;
+    flex: 1;
+    padding: 30px 50px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #d6e0db;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.back-btn:hover {
+    background-color: #eaf6ef;
+}
+
+.auth-form {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.auth-form h1 {
+    font-size: 26px;
+}
+
+.auth-form .btn {
+    margin-top: 22px;
+}
+
+.auth-links {
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+.notice {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #eaf6ef;
+    color: #1a6b58;
+    font-size: 12px;
+}
+
+/* =====================================================
+   ABOUT (landing) PAGE
+   ===================================================== */
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    padding: 12px 40px;
+    background-color: white;
+    border-bottom: 1px solid #e3ebe6;
+}
+
+.topbar .logo {
+    flex: 1;
+}
+
+.topbar nav {
+    flex: 2;
+    text-align: center;
+}
+
+.topbar nav a {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #5d7770;
+    font-weight: normal;
+}
+
+.topbar nav a:hover {
+    color: #1a6b58;
+}
+
+.topbar nav a.active {
+    color: #1a6b58;
+    font-weight: bold;
+    border-bottom: 2px solid #1a6b58;
+}
+
+.topbar .login-area {
+    flex: 1;
+    text-align: right;
+}
+
+.section {
+    padding: 40px 40px;
+}
+
+.section-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    margin-top: 8px;
+    font-size: 26px;
+}
+
+.section .intro {
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+.bg-mint {
+    background-color: #eaf6ef;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.hero {
+    padding: 50px 40px;
+    background-color: #eaf6ef;
+}
+
+.hero .section-inner {
+    display: flex;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 11px;
+    font-weight: bold;
+    color: #1a6b58;
+}
+
+.hero-text h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    max-width: 420px;
+}
+
+.dots span {
+    display: inline-block;
+    margin-right: 22px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #17302b;
+}
+
+.hero-card {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d6e0db;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.hero-card-top {
+    position: relative;
+    padding: 22px;
+    border-radius: 14px;
+    background-color: #1a6b58;
+    color: white;
+    min-height: 150px;
+}
+
+.hero-card-top .eyebrow {
+    color: white;
+    font-size: 9px;
+}
+
+.hero-card-top h2 {
+    margin-top: 20px;
+    max-width: 230px;
+    color: white;
+    font-size: 22px;
+}
+
+.hero-card-top .badge {
+    margin-top: 12px;
+}
+
+.target {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 70px;
+    height: 70px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background-color: #ffc94d;
+}
+
+.hero-card-bottom {
+    padding: 16px 10px 8px 10px;
+}
+
+.strip {
+    display: flex;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.strip div {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.icon-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    border-radius: 8px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.blue {
+    background-color: #dbe8fb;
+}
+
+.purple {
+    background-color: #e6e0fa;
+}
+
+.pink {
+    background-color: #fbdcd6;
+}
+
+.mint {
+    background-color: #dff3e6;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #d6e0db;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 2px 6px #eef2ef;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card .icon-box {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.circle-num {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #1a6b58;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.for-students {
+    background-color: #eaf6ef;
+    border: 1px solid #cfe6d6;
+}
+
+.for-organizers {
+    background-color: #17403a;
+}
+
+.for-students li, .for-organizers li {
+    font-size: 12px;
+    line-height: 2;
+}
+
+.for-organizers h3, .for-organizers p, .for-organizers li {
+    color: white;
+}
+
+.for-students ul, .for-organizers ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.interest {
+    display: flex;
+    padding: 12px 16px;
+    border: 1px solid #d6e0db;
+    border-radius: 12px;
+    background-color: white;
+    color: #17302b;
+    font-size: 12px;
+}
+
+.interest:hover {
+    background-color: #eaf6ef;
+}
+
+.cta {
+    display: flex;
+    margin-top: 16px;
+    padding: 24px 30px;
+    border-radius: 16px;
+    background-color: #1a6b58;
+}
+
+.cta div {
+    flex: 1;
+}
+
+.cta h2, .cta p {
+    color: white;
+}
+
+.cta h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.site-footer {
+    padding: 30px 40px;
+    background-color: #17403a;
+    color: white;
+}
+
+.site-footer .section-inner {
+    max-width: 1000px;
+}
+
+.site-footer .top {
+    display: flex;
+}
+
+.site-footer .top div {
+    flex: 1;
+}
+
+.site-footer nav {
+    text-align: right;
+}
+
+.site-footer nav a {
+    display: inline-block;
+    margin-left: 22px;
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.site-footer p {
+    color: white;
+    font-size: 12px;
+}
+
+.site-footer hr {
+    margin: 16px 0 10px 0;
+    border: none;
+    border-top: 1px solid #3b6159;
+}
+
+/* =====================================================
+   APP LAYOUT (student, organizer, admin)
+   Sidebar is position: sticky - no JavaScript
+   ===================================================== */
+.app {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+    flex: none;
+    width: 240px;
+    height: 94vh;
+    margin: 10px;
+    padding: 24px 16px;
+    border: 1px solid #d6e0db;
+    border-radius: 24px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.sidebar .logo {
+    margin-bottom: 26px;
+    padding-left: 6px;
+}
+
+.side-title {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #5d7770;
+    text-transform: uppercase;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 12px 14px;
+    margin-bottom: 4px;
+    border-radius: 12px;
+    color: #5d7770;
+    font-weight: normal;
+}
+
+.sidebar nav a:hover {
+    background-color: #f1f5f2;
+    color: #17302b;
+}
+
+.sidebar nav a.active {
+    background-color: #eaf6ef;
+    color: #1a6b58;
+    font-weight: bold;
+}
+
+.help {
+    margin-top: 20px;
+    padding: 16px 10px 0 10px;
+    border-top: 1px solid #e3ebe6;
+}
+
+.help h4 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #5d7770;
+    text-transform: uppercase;
+}
+
+.help p {
+    margin: 6px 0;
+    color: #17302b;
+    font-size: 13px;
+}
+
+.side-user {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #e3ebe6;
+}
+
+.user-row {
+    display: flex;
+    gap: 10px;
+}
+
+.avatar {
+    flex: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #dff3e6;
+    line-height: 36px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1a6b58;
+}
+
+.user-name {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.user-role {
+    display: block;
+    font-size: 11px;
+    color: #5d7770;
+}
+
+.logout {
+    display: block;
+    margin-top: 12px;
+    padding-left: 4px;
+    font-size: 13px;
+    color: #c0392b;
+}
+
+.logout:hover {
+    color: #8e2418;
+}
+
+/* ---------- Main area ---------- */
+.main {
+    flex: 1;
+    max-width: 1100px;
+    padding: 24px 30px 40px 20px;
+}
+
+.page-head {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.page-head .titles {
+    flex: 1;
+}
+
+.page-head h1 {
+    font-size: 30px;
+}
+
+.page-head p {
+    margin-top: 6px;
+}
+
+.page-head .btn {
+    margin-left: 12px;
+}
+
+.mini-user {
+    display: flex;
+    gap: 10px;
+}
+
+/* ---------- Cards for the app ---------- */
+.panel {
+    margin-bottom: 16px;
+    padding: 20px;
+    border: 1px solid #d6e0db;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.panel h3 {
+    font-size: 17px;
+}
+
+.panel .sub {
+    margin-top: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+.banner {
+    margin-bottom: 16px;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #eaf6ef;
+    display: flex;
+}
+
+.banner div {
+    flex: 1;
+}
+
+.banner h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.tip {
+    margin-bottom: 16px;
+    padding: 18px 20px;
+    border-radius: 14px;
+    background-color: #eaf6ef;
+}
+
+.tip h3 {
+    margin-bottom: 6px;
+}
+
+.tip-grey {
+    background-color: #f1f5f2;
+}
+
+.tip p {
+    color: #17302b;
+    font-size: 12px;
+}
+
+/* ---------- Stat cards ---------- */
+.stats {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.stat {
+    position: relative;
+    flex: 1;
+    padding: 18px;
+    border: 1px solid #d6e0db;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.stat .label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.stat .number {
+    margin: 10px 0 6px 0;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.stat .note {
+    font-size: 12px;
+    color: #5d7770;
+}
+
+.stat .dash {
+    position: absolute;
+    top: 22px;
+    right: 18px;
+    width: 18px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #1a6b58;
+}
+
+.stat .dash-yellow {
+    background-color: #ffc94d;
+}
+
+.stat .dash-red {
+    background-color: #c0392b;
+}
+
+.stat .dash-blue {
+    background-color: #dbe8fb;
+}
+
+/* ---------- List rows inside cards ---------- */
+.item {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-top: 1px solid #e3ebe6;
+}
+
+.item:first-child {
+    border-top: none;
+}
+
+.item .info {
+    flex: 1;
+}
+
+.item .info strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.item .info span {
+    font-size: 12px;
+    color: #5d7770;
+}
+
+.thumb {
+    flex: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background-color: #dbe8fb;
+}
+
+.date-box {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background-color: #dff3e6;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.3;
+    padding-top: 6px;
+}
+
+.date-box b {
+    display: block;
+    font-size: 15px;
+}
+
+/* ---------- Event cards ---------- */
+.event-card {
+    flex: 1;
+    overflow: hidden;
+    border: 1px solid #d6e0db;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.event-top {
+    position: relative;
+    height: 120px;
+    padding: 14px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.star {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 16px;
+    color: #1a6b58;
+}
+
+.event-body {
+    padding: 16px;
+}
+
+.event-body h3 {
+    margin-bottom: 4px;
+}
+
+.event-body .small {
+    margin-bottom: 14px;
+    color: #5d7770;
+}
+
+.event-foot {
+    display: flex;
+}
+
+.event-foot span {
+    flex: 1;
+}
+
+.event-foot a {
+    font-size: 12px;
+}
+
+.bg-blue {
+    background-color: #dbe8fb;
+}
+
+.bg-purple {
+    background-color: #e6e0fa;
+}
+
+.bg-orange {
+    background-color: #ffc94d;
+}
+
+.bg-pink {
+    background-color: #fbdcd6;
+}
+
+.bg-lime {
+    background-color: #d5e8c8;
+}
+
+/* ---------- Search/filter bar ---------- */
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.filter-bar .grow {
+    flex: 3;
+}
+
+.filter-bar .part {
+    flex: 1;
+}
+
+.filter-box {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #d6e0db;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.filter-box .filter-bar {
+    margin-bottom: 0;
+}
+
+.filter-bar .btn {
+    margin-top: 0;
+}
+
+/* ---------- Tables ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table {
+    margin-bottom: 16px;
+    border: 1px solid #d6e0db;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.data-table th {
+    padding: 14px 16px;
+    background-color: #eaf2ed;
+    text-align: left;
+    font-size: 12px;
+}
+
+.data-table td {
+    padding: 18px 16px;
+    font-size: 12px;
+}
+
+.data-table tr.shade {
+    background-color: #f1f7f3;
+}
+
+.data-table td:first-child {
+    font-weight: bold;
+}
+
+.table-wrap {
+    margin-bottom: 16px;
+    overflow: auto;
+    border: 1px solid #d6e0db;
+    border-radius: 12px;
+}
+
+.table-wrap .data-table {
+    margin-bottom: 0;
+    border: none;
+}
+
+/* ---------- Tabs (links that look like tabs) ---------- */
+.tabs {
+    display: flex;
+    gap: 6px;
+    padding: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #d6e0db;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.tabs a {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    color: #17302b;
+}
+
+.tabs a:hover {
+    background-color: #f1f5f2;
+}
+
+.tabs a.on {
+    background-color: #eaf6ef;
+    border: 1px solid #1a6b58;
+    color: #1a6b58;
+    font-weight: bold;
+}
+
+.tabs-small {
+    display: inline-flex;
+    width: 330px;
+}
+
+/* ---------- Settings rows (checkbox switches) ---------- */
+.setting {
+    display: flex;
+    padding: 14px 0;
+    border-top: 1px solid #e3ebe6;
+}
+
+.setting:first-child {
+    border-top: none;
+}
+
+.setting .text {
+    flex: 1;
+}
+
+.setting strong {
+    display: block;
+    font-size: 13px;
+}
+
+.setting span {
+    font-size: 11px;
+    color: #5d7770;
+}
+
+.setting input {
+    width: 20px;
+    height: 20px;
+    accent-color: #1a6b58;
+}
+
+/* ---------- Bar chart (admin overview) ---------- */
+.bars {
+    display: flex;
+    height: 220px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d6e0db;
+    align-items: flex-end;
+    gap: 22px;
+}
+
+.bar {
+    flex: 1;
+    border-radius: 8px 8px 0 0;
+    background-color: #dff3e6;
+}
+
+.bar-dark {
+    background-color: #1a6b58;
+}
+
+.bar-labels {
+    display: flex;
+    gap: 22px;
+    margin: 8px 0 14px 0;
+    font-size: 11px;
+    color: #5d7770;
+    text-align: center;
+}
+
+.bar-labels span {
+    flex: 1;
+}
+
+.attention {
+    display: flex;
+    padding: 18px 0;
+    border-bottom: 1px solid #e3ebe6;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.attention span:first-child {
+    flex: 1;
+}
+
+.pill-num {
+    display: inline-block;
+    min-width: 30px;
+    padding: 4px 10px;
+    border-radius: 14px;
+    background-color: #ffc94d;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* ---------- Footer note of pages ---------- */
+.page-note {
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+/* ---------- Extra small pieces ---------- */
+.interest span {
+    flex: 1;
+}
+
+.col-wide {
+    flex: 3;
+}
+
+.col-narrow {
+    flex: 2;
+}
+
+.setting label {
+    margin: 0;
+    font-size: 13px;
+}
+
+.saved-card {
+    flex: 1;
+    padding: 18px;
+    border: 1px solid #d6e0db;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.saved-top {
+    display: flex;
+    gap: 14px;
+}
+
+.saved-top .info {
+    flex: 1;
+}
+
+.saved-top .info strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.saved-top .info span.small {
+    display: block;
+    margin-bottom: 10px;
+    color: #5d7770;
+}
+
+.saved-foot {
+    display: flex;
+    margin-top: 14px;
+    padding-top: 6px;
+}
+
+.saved-foot span {
+    flex: 1;
+}
+
+.side {
+    width: 140px;
+    text-align: right;
+}
+
+.side a {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.right {
+    text-align: right;
+}
+
+.head-line {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.head-line h3, .head-line p, .head-line div {
+    flex: 1;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.members {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.members div {
+    flex: 1;
+}
+
+.members strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.members span {
+    font-size: 12px;
+    color: #5d7770;
+}
+
+.link-box {
+    display: block;
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #eaf6ef;
+    font-size: 13px;
+}
+
+.link-box:hover {
+    background-color: #d5eddc;
+}
+
+.demo-links {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #5d7770;
+}
+
+.demo-links a {
+    margin-right: 10px;
+}
+
+/* ---------- Small fixes ---------- */
+.filter-bar select {
+    flex: 1;
+    width: auto;
+}
+
+.filter-bar .btn {
+    flex: none;
+    white-space: nowrap;
+}
+
+.page-head .btn {
+    align-self: flex-start;
+}
+
+.head-line select {
+    display: inline-block;
+    width: 240px;
+}
+
+.data-table td span {
+    font-weight: normal;
+}

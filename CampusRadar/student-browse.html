@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse events | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Student workspace</div>
+        <nav>
+            <a href="student-overview.html">Overview</a>
+            <a href="student-browse.html" class="active">Browse events</a>
+            <a href="student-saved.html">Saved events</a>
+            <a href="student-registrations.html">My registrations</a>
+            <a href="student-profile.html">Profile &amp; settings</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Student account</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Browse events</h1>
+                <p>Find competitions, workshops, conferences and campus activities.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="filter-box">
+            <form action="student-browse.html" method="get" class="filter-bar">
+                <input class="grow" type="text" id="q" name="q" placeholder="Search events, skills or organizers">
+                <select id="category" name="category"><option>All categories</option><option>Hackathon</option><option>Research</option><option>Robotics</option><option>Culture</option><option>Design</option><option>Science</option></select>
+                <select id="location" name="location"><option>Any location</option><option>Dhaka</option><option>Chattogram</option><option>Rajshahi</option><option>Online</option></select>
+                <select id="when" name="when"><option>Upcoming</option><option>This week</option><option>This month</option></select>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </section>
+
+        <div class="head-line">
+            <h3>Recommended for you</h3>
+            <p class="right small">12 events found</p>
+        </div>
+
+        <section class="row mt">
+            <article class="event-card">
+                <div class="event-top bg-blue">HACKATHON<button class="star" type="button">&#9734;</button></div>
+                <div class="event-body">
+                    <h3>National Hackathon 2027</h3>
+                    <p class="small">Tech Society &middot; Example University<br>18&ndash;19 Feb &middot; Dhaka</p>
+                    <div class="event-foot">
+                        <span><span class="badge green">Registration open</span></span>
+                        <a href="#">View details &#8599;</a>
+                    </div>
+                </div>
+            </article>
+            <article class="event-card">
+                <div class="event-top bg-purple">RESEARCH<button class="star" type="button">&#9734;</button></div>
+                <div class="event-body">
+                    <h3>Research &amp; Innovation Summit</h3>
+                    <p class="small">Research Forum<br>24 Feb &middot; Online</p>
+                    <div class="event-foot">
+                        <span><span class="badge yellow">Closes in 3 days</span></span>
+                        <a href="#">View details &#8599;</a>
+                    </div>
+                </div>
+            </article>
+            <article class="event-card">
+                <div class="event-top bg-orange">ROBOTICS<button class="star" type="button">&#9734;</button></div>
+                <div class="event-body">
+                    <h3>Inter-University Robotics Fest</h3>
+                    <p class="small">Engineering Club &middot; CUET<br>3 Mar &middot; Chattogram</p>
+                    <div class="event-foot">
+                        <span><span class="badge green">Registration open</span></span>
+                        <a href="#">View details &#8599;</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="row mt">
+            <article class="event-card">
+                <div class="event-top bg-pink">CULTURE<button class="star" type="button">&#9734;</button></div>
+                <div class="event-body">
+                    <h3>Campus Culture Week</h3>
+                    <p class="small">Cultural Society &middot; Rajshahi<br>10&ndash;12 Mar &middot; Rajshahi</p>
+                    <div class="event-foot">
+                        <span><span class="badge green">Registration open</span></span>
+                        <a href="#">View details &#8599;</a>
+                    </div>
+                </div>
+            </article>
+            <article class="event-card">
+                <div class="event-top bg-lime">DESIGN<button class="star" type="button">&#9734;</button></div>
+                <div class="event-body">
+                    <h3>Design for Impact</h3>
+                    <p class="small">Creative Society<br>15 Mar &middot; Online</p>
+                    <div class="event-foot">
+                        <span><span class="badge green">New event</span></span>
+                        <a href="#">View details &#8599;</a>
+                    </div>
+                </div>
+            </article>
+            <article class="event-card">
+                <div class="event-top bg-blue">SCIENCE<button class="star" type="button">&#9734;</button></div>
+                <div class="event-body">
+                    <h3>Astronomy Night</h3>
+                    <p class="small">AASSC &middot; AIUB<br>22 Mar &middot; Dhaka</p>
+                    <div class="event-foot">
+                        <span><span class="badge green">Registration open</span></span>
+                        <a href="#">View details &#8599;</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

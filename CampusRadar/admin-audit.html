@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit log | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Administrator workspace</div>
+        <nav>
+            <a href="admin-overview.html">Overview</a>
+            <a href="admin-moderation.html">Event moderation</a>
+            <a href="admin-accounts.html">Accounts</a>
+            <a href="admin-organizations.html">Organizations</a>
+            <a href="admin-reports.html">Reports</a>
+            <a href="admin-settings.html">Platform settings</a>
+            <a href="admin-audit.html" class="active">Audit log</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Platform administrator</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Audit log</h1>
+                <p>Review key platform actions and administrator activity.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <form action="admin-audit.html" method="get" class="filter-bar">
+            <input class="grow" type="text" id="q" name="q" placeholder="Search actor, action or target">
+            <select id="action" name="action"><option>Action: All</option><option>Event approved</option><option>Account suspended</option><option>Reminder sent</option></select>
+            <select id="range" name="range"><option>Last 30 days</option><option>Last 7 days</option><option>Today</option></select>
+        </form>
+
+<div class="table-wrap">
+<table class="data-table">
+    <thead>
+        <tr><th>Timestamp</th><th>Actor</th><th>Action</th><th>Target</th><th>Result</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>16 Oct 2026 &middot; 9:14 PM</td><td>admin@campusradar.bd</td><td>Event approved</td><td>National Innovation Fest</td><td><b>Success</b></td></tr>
+        <tr class="shade"><td>16 Oct 2026 &middot; 8:42 PM</td><td>admin@campusradar.bd</td><td>Review requested</td><td>Astronomy Night</td><td><b>Success</b></td></tr>
+        <tr><td>15 Oct 2026 &middot; 5:10 PM</td><td>admin@campusradar.bd</td><td>Account suspended</td><td>x@temporary.email</td><td><b>Success</b></td></tr>
+        <tr class="shade"><td>15 Oct 2026 &middot; 3:31 PM</td><td>admin@campusradar.bd</td><td>Report investigated</td><td>RPT-0028</td><td><b>Success</b></td></tr>
+        <tr><td>14 Oct 2026 &middot; 1:07 PM</td><td>system</td><td>Reminder sent</td><td>3,204 student accounts</td><td><b>System</b></td></tr>
+    </tbody>
+</table>
+</div>
+
+        <section class="tip tip-grey">
+            <h3>Audit records are append-only</h3>
+            <p>Keep a traceable record of permission changes, moderation decisions and exports.</p>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

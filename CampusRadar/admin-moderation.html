@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event moderation queue | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Administrator workspace</div>
+        <nav>
+            <a href="admin-overview.html">Overview</a>
+            <a href="admin-moderation.html" class="active">Event moderation</a>
+            <a href="admin-accounts.html">Accounts</a>
+            <a href="admin-organizations.html">Organizations</a>
+            <a href="admin-reports.html">Reports</a>
+            <a href="admin-settings.html">Platform settings</a>
+            <a href="admin-audit.html">Audit log</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Platform administrator</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Event moderation queue</h1>
+                <p>Keep the platform safe, accurate and accountable.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <form action="admin-moderation.html" method="get" class="filter-bar">
+            <input class="grow" type="text" id="q" name="q" placeholder="Search event or organizer">
+            <select id="status" name="status"><option>Status: Pending review</option><option>Flagged</option><option>Approved</option></select>
+            <select id="sort" name="sort"><option>Sort by oldest</option><option>Sort by newest</option></select>
+        </form>
+
+<div class="table-wrap">
+<table class="data-table">
+    <thead>
+        <tr><th>Event / Organizer</th><th>Submitted</th><th>Status</th><th>Risk</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>National Innovation Fest<br><span class='small muted'>Tech Society &middot; Example University</span></td><td>Today, 9:14 AM</td><td><span class="badge yellow">Pending</span></td><td><span class="badge green">Normal</span></td><td><a href="#">Review</a></td></tr>
+        <tr class="shade"><td>Astronomy Night<br><span class='small muted'>AASSC &middot; AIUB</span></td><td>Today, 8:42 AM</td><td><span class="badge yellow">Pending</span></td><td><span class="badge green">Normal</span></td><td><a href="#">Review</a></td></tr>
+        <tr><td>Quick Cash Competition<br><span class='small muted'>Unknown organizer</span></td><td>Yesterday</td><td><span class="badge red">Flagged</span></td><td><span class="badge red">High</span></td><td><a href="#">Review</a></td></tr>
+        <tr class="shade"><td>Research Summit<br><span class='small muted'>Research Forum</span></td><td>Yesterday</td><td><span class="badge yellow">Pending</span></td><td><span class="badge green">Normal</span></td><td><a href="#">Review</a></td></tr>
+        <tr><td>Campus Culture Week<br><span class='small muted'>Cultural Society</span></td><td>21 Jan</td><td><span class="badge yellow">Pending</span></td><td><span class="badge green">Normal</span></td><td><a href="#">Review</a></td></tr>
+    </tbody>
+</table>
+</div>
+
+    </main>
+</div>
+
+</body>
+</html>

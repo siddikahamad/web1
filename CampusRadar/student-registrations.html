@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My registrations | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Student workspace</div>
+        <nav>
+            <a href="student-overview.html">Overview</a>
+            <a href="student-browse.html">Browse events</a>
+            <a href="student-saved.html">Saved events</a>
+            <a href="student-registrations.html" class="active">My registrations</a>
+            <a href="student-profile.html">Profile &amp; settings</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Student account</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>My registrations</h1>
+                <p>Track submitted registrations and event updates.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="tabs tabs-small">
+            <a class="on" href="student-registrations.html">Upcoming</a>
+            <a href="#">Past registrations</a>
+        </nav>
+
+<div class="table-wrap">
+<table class="data-table">
+    <thead>
+        <tr><th>Event</th><th>Participation</th><th>Status</th><th>Date</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>National Innovation Fest</td><td>Team Nova</td><td><span class="badge green">Confirmed</span></td><td>12 Feb</td><td><a href="#">View</a></td></tr>
+        <tr class="shade"><td>Inter-University Robotics Fest</td><td>Solo entry</td><td><span class="badge yellow">Awaiting payment</span></td><td>3 Mar</td><td><a href="#">View</a></td></tr>
+        <tr><td>Research &amp; Innovation Summit</td><td>Research duo</td><td><span class="badge yellow">Submitted</span></td><td>24 Feb</td><td><a href="#">View</a></td></tr>
+        <tr class="shade"><td>Campus Culture Week</td><td>Team of 4</td><td><span class="badge green">Completed</span></td><td>10 Mar</td><td><a href="#">View</a></td></tr>
+    </tbody>
+</table>
+</div>
+
+        <button type="button" class="btn btn-outline">Download my data</button>
+
+        <section class="tip mt">
+            <h3>Keep your registration details handy</h3>
+            <p>Open any registration to review its status, event instructions and payment notes.</p>
+            <p class="mt"><b>Privacy tip: export only when you need a copy for your records.</b></p>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

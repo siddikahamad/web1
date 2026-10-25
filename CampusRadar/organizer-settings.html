@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization settings | CampusRadar BD</title>
+    <link rel="icon" href="CampusRadar_Icon_Transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+    <img src="CampusRadar_Icon_Transparent.png" alt="CampusRadar logo">
+    <div>
+        <span class="logo-name">CampusRadar</span>
+        <span class="logo-bd">BD</span>
+    </div>
+</div>
+
+        <div class="side-title">Organizer workspace</div>
+        <nav>
+            <a href="organizer-overview.html">Overview</a>
+            <a href="organizer-events.html">My events</a>
+            <a href="organizer-create.html">Create event</a>
+            <a href="organizer-registrations.html">Registrations</a>
+            <a href="organizer-settings.html" class="active">Organization settings</a>
+        </nav>
+
+        <div class="help">
+            <h4>Need a hand?</h4>
+            <p>Questions or issues?</p>
+            <a href="#">Contact support &#8599;</a>
+        </div>
+
+        <div class="side-user">
+            <div class="user-row">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">Organizer account</span>
+                </div>
+            </div>
+            <a class="logout" href="login.html">&#8618; Log out</a>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="page-head">
+            <div class="titles">
+                <h1>Organization settings</h1>
+                <p>Manage your organization profile, members and preferences.</p>
+            </div>
+            
+            <div class="mini-user">
+                <div class="avatar">AH</div>
+                <div>
+                    <span class="user-name">Abid Hasan</span>
+                    <span class="user-role">My account</span>
+                </div>
+            </div>
+        </header>
+
+        <form class="panel" action="organizer-settings.html" method="get">
+            <fieldset>
+                <legend>Organization profile</legend>
+                <div class="row">
+                    <div class="col">
+                        <label for="org">Organization name</label>
+                        <input type="text" id="org" name="org" value="AIUB Astronomy &amp; Space Science Club">
+                    </div>
+                    <div class="col">
+                        <label for="site">Official website</label>
+                        <input type="text" id="site" name="site" placeholder="https://example.edu/club">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="email">Contact email</label>
+                        <input type="email" id="email" name="email" value="aiubassc@gmail.com">
+                    </div>
+                    <div class="col">
+                        <label for="social">Public social link</label>
+                        <input type="text" id="social" name="social" placeholder="https://social.example/club">
+                    </div>
+                </div>
+                <label for="about">Short description</label>
+                <input type="text" id="about" name="about" value="Student-led community exploring astronomy, space science and discovery.">
+            </fieldset>
+
+            <div class="head-line mt">
+                <div>
+                    <b class="small">Verification status</b>
+                    <p class="mt"><span class="badge green">Verified organization</span></p>
+                </div>
+                <div class="right"><button type="submit" class="btn">Save changes</button></div>
+            </div>
+        </form>
+
+        <section class="panel">
+            <h3>Organization members</h3>
+            <p class="sub">Manage team access by role</p>
+            <div class="members">
+                <div><strong>Abid Hasan</strong><span>Owner &middot; Full access</span></div>
+                <div><strong>Sara Rahman</strong><span>Editor &middot; Events and registrations</span></div>
+                <div><strong>Team roles</strong><span>Review access before inviting</span></div>
+            </div>
+            <div class="right"><button type="button" class="btn btn-outline">+ Invite member</button></div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
